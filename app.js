@@ -44,7 +44,7 @@ var io = require('socket.io').listen(server, function() {
 // A user connects to the server (opens a socket)
 io.sockets.on('connection', function (socket) {
 
-    // (2): The server recieves a ping event
+    // (2): The server receives a ping event
     // from the browser on this socket
     socket.on('ping', function ( data ) {
   
